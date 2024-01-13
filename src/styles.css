@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+/* home section */
+.home-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #55b2d2;
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  /* background-color: ; */
+}
+
+#logo {
+  display: flex;
+  font-weight: bold;
+  /* insert color here */
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+.navbar-nav {
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.nav-item .nav-link {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown {
+  border: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-primary {
+  border: 0;
+}
+
+.btn:hover,
+.btncv:hover {
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.btn,
+.btncv {
+  background: transparent;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+  color: white;
+  outline: none;
+}
+
+.dropdown-toggle:hover {
+  border: none;
+  outline: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.btncv {
+  display: inline-flex;
+  justify-content: end;
+  background: transparent;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+  color: white;
+  outline: none;
+}
+
+.btncv:hover {
+  color: black;
+}
+
+/* Home */
+
+.home {
+  width: 100%;
+  height: 91.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+
+.home .img {
+  flex: 1 1 400px;
+}
+
+.home .img img {
+  width: 70%;
+  margin-left: 30px;
+}
+.home .content {
+  flex: 1 1 400px;
+  margin-left: 45px;
+}
+.home .content h5 {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.home .content h3 {
+  font-size: 50px;
+  color: white;
+}
+
+.home .content h3 span {
+  color: black;
+  font-weight: bold;
+}
+
+.changecontent::after {
+  content: " ";
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  animation: changetext 10s infinite ease-out;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Studious Individual";
+  }
+  25% {
+    content: "Enthusiastic Coder";
+  }
+  50% {
+    content: "FC Barcelona Fan";
+  }
+  75% {
+    content: "Avid Gamer";
+  }
+  100% {
+    content: "Future Junior Developer";
+  }
+}
+
+.home .content p {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#btn1 {
+  width: 350px;
+  height: 30px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  color: white;
+  background-color: #55b2d2;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#btn1:hover {
+  background-color: black;
+}
+
+/* Portfolio */
+
+.row {
+  margin-top: 30px;
+}
+
+#portfolio {
+  width: 100%;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+#portfolio h1 {
+  color: black;
+  padding-top: 30px;
+  font-weight: bold;
+}
