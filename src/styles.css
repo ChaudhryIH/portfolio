@@ -14,13 +14,12 @@
 /* navbar */
 #navbar {
   display: flex;
-  /* background-color: ; */
 }
 
 #logo {
   display: flex;
   font-weight: bold;
-  /* insert color here */
+
   letter-spacing: 2px;
   font-size: 24px;
 }
@@ -240,4 +239,26 @@
   color: black;
   padding-top: 30px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 870px) {
+  .home-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .portfolio {
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #Israr2022 {
+    display: none;
+  }
 }
